@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiểu Mình – Chọn Đúng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Hiểu Mình – Chọn Đúng</h2>
+    <nav>
+      <a href="#gioithieu">Giới thiệu</a>
+      <a href="#cauhoi">Tự đánh giá</a>
+      <a href="#dinhhuong">Định hướng</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="gioithieu">
+      <p class="tag">HIỂU BẢN THÂN · CHỦ ĐỘNG LỰA CHỌN</p>
+      <h1>Bạn đang lựa chọn vì điều gì?</h1>
+      <p>
+        Đừng vội chạy theo số đông. Hãy dành thời gian
+        tìm hiểu mục tiêu và nhu cầu học tập của chính mình.
+      </p>
+      <a class="button" href="#cauhoi">Bắt đầu tự đánh giá</a>
+    </section>
+
+    <section id="cauhoi">
+      <h2>4 câu hỏi trước khi lựa chọn</h2>
+      <p class="intro">
+        Hãy trả lời trung thực để hiểu rõ hơn về lựa chọn học tập của bạn.
+      </p>
+
+      <form id="quiz">
+        <article class="question">
+          <h3>1. Mục tiêu cá nhân</h3>
+          <p>Hoạt động này có phù hợp với mục tiêu và định hướng học tập của mình không?</p>
+          <label><input type="radio" name="q1" value="yes" required> Có</label>
+          <label><input type="radio" name="q1" value="sometimes"> Chưa chắc</label>
+          <label><input type="radio" name="q1" value="no"> Không</label>
+        </article>
+
+        <article class="question">
+          <h3>2. Động cơ tham gia</h3>
+          <p>Mình có muốn tham gia chỉ vì thấy nhiều bạn cùng tham gia không?</p>
+          <label><input type="radio" name="q2" value="yes" required> Có</label>
+          <label><input type="radio" name="q2" value="sometimes"> Đôi khi</label>
+          <label><input type="radio" name="q2" value="no"> Không</label>
+        </article>
+
+        <article class="question">
+          <h3>3. Ảnh hưởng từ bạn bè</h3>
+          <p>Nếu không có bạn bè tham gia, mình có còn muốn lựa chọn hoạt động này không?</p>
+          <label><input type="radio" name="q3" value="yes" required> Có</label>
+          <label><input type="radio" name="q3" value="sometimes"> Chưa chắc</label>
+          <label><input type="radio" name="q3" value="no"> Không</label>
+        </article>
+
+        <article class="question">
+          <h3>4. Tính khả thi</h3>
+          <p>Mình có đủ thời gian, khả năng và điều kiện để tham gia hoạt động này không?</p>
+          <label><input type="radio" name="q4" value="yes" required> Có</label>
+          <label><input type="radio" name="q4" value="sometimes"> Chưa chắc</label>
+          <label><input type="radio" name="q4" value="no"> Không</label>
+        </article>
+
+        <button class="button" type="submit">Xem gợi ý</button>
+      </form>
+
+      <div id="result" aria-live="polite"></div>
+    </section>
+
+    <section class="closing" id="dinhhuong">
+      <h2>Lựa chọn phù hợp bắt đầu từ sự thấu hiểu bản thân</h2>
+      <p>
+        Không phải hoạt động nào phổ biến cũng phù hợp với tất cả mọi người.
+        Hãy tìm hiểu, cân nhắc và chọn điều phù hợp với mục tiêu của bạn.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Sản phẩm nghiên cứu khoa học kỹ thuật dành cho học sinh THPT
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

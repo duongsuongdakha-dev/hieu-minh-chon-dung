@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #26352f;
+  background: #f6f8f4;
+  line-height: 1.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 8%;
+  background: white;
+}
+
+header h2 {
+  color: #28745a;
+  font-size: 21px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #344b40;
+}
+
+nav a:hover {
+  color: #28745a;
+}
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 35px 22px;
+}
+
+.hero {
+  padding: 60px 30px;
+  border-radius: 22px;
+  background: #e1efe5;
+  text-align: center;
+}
+
+.tag {
+  color: #28745a;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.25;
+}
+
+.hero p:not(.tag) {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 9px;
+  background: #28745a;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1e5c46;
+}
+
+#cauhoi {
+  padding: 45px 0;
+}
+
+#cauhoi > h2,
+.intro {
+  text-align: center;
+}
+
+.question {
+  margin: 18px 0;
+  padding: 22px;
+  border: 1px solid #e0e8e1;
+  border-radius: 14px;
+  background: white;
+}
+
+.question h3 {
+  color: #28745a;
+}
+
+.question label {
+  display: inline-block;
+  margin: 8px 18px 5px 0;
+  cursor: pointer;
+}
+
+.question input {
+  accent-color: #28745a;
+}
+
+#result article {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 14px;
+  background: #e1efe5;
+  border: 1px solid #c6dfce;
+}
+
+#result h3 {
+  color: #28745a;
+}
+
+.closing {
+  padding: 30px;
+  border-radius: 16px;
+  background: #edf1e8;
+  text-align: center;
+}
+
+footer {
+  padding: 22px;
+  color: #65746b;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .question label {
+    display: block;
+  }
+}
