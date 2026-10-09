@@ -7,82 +7,209 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h2>Hiểu Mình – Chọn Đúng</h2>
-    <nav>
-      <a href="#gioithieu">Giới thiệu</a>
-      <a href="#cauhoi">Tự đánh giá</a>
-      <a href="#dinhhuong">Định hướng</a>
+  <header class="site-header">
+    <a class="brand" href="#trangchu">Hiểu Mình – Chọn Đúng</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">☰</button>
+    <nav id="mainNav">
+      <a href="#trangchu">Trang chủ</a>
+      <a href="#fomo">Tìm hiểu FOMO</a>
+      <a href="#tudanhgia">Tự đánh giá</a>
+      <a href="#hocthuat">Hoạt động học thuật</a>
+      <a href="#boncauhoi">Bộ câu hỏi</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="gioithieu">
-      <p class="tag">HIỂU BẢN THÂN · CHỦ ĐỘNG LỰA CHỌN</p>
-      <h1>Bạn đang lựa chọn vì điều gì?</h1>
-      <p>
-        Đừng vội chạy theo số đông. Hãy dành thời gian
-        tìm hiểu mục tiêu và nhu cầu học tập của chính mình.
-      </p>
-      <a class="button" href="#cauhoi">Bắt đầu tự đánh giá</a>
+    <section class="hero" id="trangchu">
+      <div class="hero-copy">
+        <p class="eyebrow">HIỂU BẢN THÂN · CHỦ ĐỘNG LỰA CHỌN</p>
+        <h1>Bạn đang lựa chọn vì điều gì?</h1>
+        <p>Giữa nhiều xu hướng học tập, hãy dành thời gian hiểu mục tiêu, nhu cầu và điều kiện của chính mình trước khi quyết định.</p>
+        <div class="hero-actions">
+          <a class="button" href="#tudanhgia">Bắt đầu tự đánh giá</a>
+          <a class="button button-light" href="#fomo">Tìm hiểu FOMO</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-symbol">✦</div>
+        <h2>Một lựa chọn tốt bắt đầu từ câu hỏi đúng</h2>
+        <p>Không phải hoạt động nào phổ biến cũng phù hợp với tất cả mọi người.</p>
+      </div>
     </section>
 
-    <section id="cauhoi">
-      <h2>4 câu hỏi trước khi lựa chọn</h2>
-      <p class="intro">
-        Hãy trả lời trung thực để hiểu rõ hơn về lựa chọn học tập của bạn.
-      </p>
-
-      <form id="quiz">
-        <article class="question">
-          <h3>1. Mục tiêu cá nhân</h3>
-          <p>Hoạt động này có phù hợp với mục tiêu và định hướng học tập của mình không?</p>
-          <label><input type="radio" name="q1" value="yes" required> Có</label>
-          <label><input type="radio" name="q1" value="sometimes"> Chưa chắc</label>
-          <label><input type="radio" name="q1" value="no"> Không</label>
+    <section class="section" id="fomo">
+      <div class="section-heading">
+        <p class="eyebrow">01 · NHẬN DIỆN</p>
+        <h2>FOMO trong học tập là gì?</h2>
+        <p>FOMO là nỗi lo mình đang bỏ lỡ trải nghiệm, cơ hội hoặc điều có ý nghĩa mà người khác đang có.</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="icon">👀</span>
+          <h3>So sánh với bạn bè</h3>
+          <p>Thường chú ý đến điểm số, chứng chỉ, giải thưởng hoặc hoạt động mà các bạn đang tham gia.</p>
         </article>
-
-        <article class="question">
-          <h3>2. Động cơ tham gia</h3>
-          <p>Mình có muốn tham gia chỉ vì thấy nhiều bạn cùng tham gia không?</p>
-          <label><input type="radio" name="q2" value="yes" required> Có</label>
-          <label><input type="radio" name="q2" value="sometimes"> Đôi khi</label>
-          <label><input type="radio" name="q2" value="no"> Không</label>
+        <article class="info-card">
+          <span class="icon">💭</span>
+          <h3>Lo mình bị bỏ lại</h3>
+          <p>Cảm thấy bất an khi chưa bắt đầu một kỳ thi, khóa học hay hoạt động đang phổ biến.</p>
         </article>
-
-        <article class="question">
-          <h3>3. Ảnh hưởng từ bạn bè</h3>
-          <p>Nếu không có bạn bè tham gia, mình có còn muốn lựa chọn hoạt động này không?</p>
-          <label><input type="radio" name="q3" value="yes" required> Có</label>
-          <label><input type="radio" name="q3" value="sometimes"> Chưa chắc</label>
-          <label><input type="radio" name="q3" value="no"> Không</label>
+        <article class="info-card">
+          <span class="icon">🧭</span>
+          <h3>Dừng lại để cân nhắc</h3>
+          <p>Tìm hiểu lợi ích, mục tiêu và điều kiện thực tế trước khi quyết định có tham gia hay không.</p>
         </article>
+      </div>
+      <div class="scenario">
+        <h3>Tình huống gần gũi</h3>
+        <p>Bạn vừa vào lớp 10 và thấy nhiều bạn bắt đầu học IELTS. Bạn chưa có kế hoạch học ngay, nhưng bắt đầu lo rằng mình sẽ chậm hơn nếu không đăng ký. Đây là lúc bạn có thể dừng lại và tự hỏi: <strong>“Mình có thực sự cần hoạt động này ở thời điểm hiện tại không?”</strong></p>
+      </div>
+      <p class="notice">FOMO không phải là chẩn đoán tâm lý. Phần này chỉ giúp học sinh nhận diện một cảm giác có thể xuất hiện khi đứng trước nhiều lựa chọn học tập.</p>
+    </section>
 
+    <section class="section section-tint" id="tudanhgia">
+      <div class="section-heading">
+        <p class="eyebrow">02 · TỰ PHẢN ÁNH</p>
+        <h2>Thử nhìn lại lựa chọn của mình</h2>
+        <p>Chọn câu trả lời gần với suy nghĩ của bạn nhất. Không có đáp án đúng hoặc sai.</p>
+      </div>
+      <form id="quiz" class="quiz">
         <article class="question">
-          <h3>4. Tính khả thi</h3>
-          <p>Mình có đủ thời gian, khả năng và điều kiện để tham gia hoạt động này không?</p>
-          <label><input type="radio" name="q4" value="yes" required> Có</label>
-          <label><input type="radio" name="q4" value="sometimes"> Chưa chắc</label>
-          <label><input type="radio" name="q4" value="no"> Không</label>
+          <span class="question-number">CÂU 1</span>
+          <h3>Hoạt động này có phù hợp với mục tiêu và định hướng học tập của mình không?</h3>
+          <div class="options">
+            <label><input type="radio" name="q1" value="yes" required> Có</label>
+            <label><input type="radio" name="q1" value="sometimes"> Chưa chắc</label>
+            <label><input type="radio" name="q1" value="no"> Không</label>
+          </div>
         </article>
-
-        <button class="button" type="submit">Xem gợi ý</button>
+        <article class="question">
+          <span class="question-number">CÂU 2</span>
+          <h3>Mình có muốn tham gia chủ yếu vì thấy nhiều bạn cùng tham gia không?</h3>
+          <div class="options">
+            <label><input type="radio" name="q2" value="yes" required> Có</label>
+            <label><input type="radio" name="q2" value="sometimes"> Đôi khi</label>
+            <label><input type="radio" name="q2" value="no"> Không</label>
+          </div>
+        </article>
+        <article class="question">
+          <span class="question-number">CÂU 3</span>
+          <h3>Nếu không có bạn bè tham gia, mình có còn muốn lựa chọn hoạt động này không?</h3>
+          <div class="options">
+            <label><input type="radio" name="q3" value="yes" required> Có</label>
+            <label><input type="radio" name="q3" value="sometimes"> Chưa chắc</label>
+            <label><input type="radio" name="q3" value="no"> Không</label>
+          </div>
+        </article>
+        <article class="question">
+          <span class="question-number">CÂU 4</span>
+          <h3>Mình có đủ thời gian, khả năng và điều kiện để tham gia hoạt động này không?</h3>
+          <div class="options">
+            <label><input type="radio" name="q4" value="yes" required> Có</label>
+            <label><input type="radio" name="q4" value="sometimes"> Chưa chắc</label>
+            <label><input type="radio" name="q4" value="no"> Không</label>
+          </div>
+        </article>
+        <div class="quiz-actions">
+          <button class="button" type="submit">Xem gợi ý</button>
+          <button class="text-button" type="reset" id="resetQuiz">Xóa câu trả lời</button>
+        </div>
       </form>
-
-      <div id="result" aria-live="polite"></div>
+      <div id="result" class="result" aria-live="polite"></div>
     </section>
 
-    <section class="closing" id="dinhhuong">
-      <h2>Lựa chọn phù hợp bắt đầu từ sự thấu hiểu bản thân</h2>
-      <p>
-        Không phải hoạt động nào phổ biến cũng phù hợp với tất cả mọi người.
-        Hãy tìm hiểu, cân nhắc và chọn điều phù hợp với mục tiêu của bạn.
-      </p>
+    <section class="section" id="hocthuat">
+      <div class="section-heading">
+        <p class="eyebrow">03 · TÌM HIỂU</p>
+        <h2>Một số hoạt động học thuật phổ biến</h2>
+        <p>Hãy tìm hiểu mục đích và yêu cầu của từng hoạt động thay vì chỉ dựa vào mức độ phổ biến.</p>
+      </div>
+      <div class="activity-grid">
+        <article class="activity-card">
+          <span class="activity-tag">Ngoại ngữ</span>
+          <h3>Chứng chỉ ngoại ngữ</h3>
+          <p>Phù hợp khi bạn có mục tiêu cải thiện ngoại ngữ, đáp ứng yêu cầu học tập hoặc chuẩn bị cho kế hoạch tương lai.</p>
+          <p class="consider"><strong>Nên cân nhắc:</strong> trình độ hiện tại, mục tiêu điểm số, thời gian và chi phí.</p>
+        </article>
+        <article class="activity-card">
+          <span class="activity-tag">Kỳ thi</span>
+          <h3>Kỳ thi đánh giá năng lực, SAT</h3>
+          <p>Có thể là lựa chọn với học sinh đang tìm hiểu phương thức xét tuyển đại học có sử dụng kết quả các kỳ thi này.</p>
+          <p class="consider"><strong>Nên cân nhắc:</strong> trường/ngành dự định đăng ký và yêu cầu tuyển sinh cập nhật.</p>
+        </article>
+        <article class="activity-card">
+          <span class="activity-tag">Năng khiếu</span>
+          <h3>Thi học sinh giỏi</h3>
+          <p>Tạo cơ hội đào sâu một môn học và thử thách kiến thức theo định hướng cá nhân.</p>
+          <p class="consider"><strong>Nên cân nhắc:</strong> mức độ yêu thích môn học, nền tảng kiến thức và thời gian ôn luyện.</p>
+        </article>
+        <article class="activity-card">
+          <span class="activity-tag">Sáng tạo</span>
+          <h3>Nghiên cứu khoa học, STEM</h3>
+          <p>Giúp rèn luyện khả năng đặt câu hỏi, giải quyết vấn đề, thử nghiệm và trình bày kết quả.</p>
+          <p class="consider"><strong>Nên cân nhắc:</strong> ý tưởng, người hướng dẫn, nguồn lực và thời gian thực hiện.</p>
+        </article>
+        <article class="activity-card">
+          <span class="activity-tag">Phát triển kỹ năng</span>
+          <h3>Khóa học trực tuyến</h3>
+          <p>Có thể giúp bổ sung kiến thức hoặc kỹ năng theo nhu cầu riêng.</p>
+          <p class="consider"><strong>Nên cân nhắc:</strong> độ tin cậy của khóa học, nội dung, lịch học và khả năng tự học.</p>
+        </article>
+        <article class="activity-card">
+          <span class="activity-tag">Trải nghiệm</span>
+          <h3>Cuộc thi và câu lạc bộ học thuật</h3>
+          <p>Có thể giúp vận dụng kiến thức, làm việc nhóm và khám phá lĩnh vực mình quan tâm.</p>
+          <p class="consider"><strong>Nên cân nhắc:</strong> mục tiêu tham gia, vai trò, lịch trình và lợi ích thực tế.</p>
+        </article>
+      </div>
+      <p class="notice">Thông tin trên mang tính định hướng chung. Học sinh nên kiểm tra yêu cầu chính thức của từng chương trình, kỳ thi hoặc cơ sở đào tạo trước khi đăng ký.</p>
+    </section>
+
+    <section class="section section-tint" id="boncauhoi">
+      <div class="section-heading">
+        <p class="eyebrow">04 · RA QUYẾT ĐỊNH</p>
+        <h2>Bốn câu hỏi trước khi lựa chọn</h2>
+        <p>Dành một phút để cân nhắc trước khi đăng ký một hoạt động mới.</p>
+      </div>
+      <div class="reflection-list">
+        <div><span>1</span><p><strong>Mục tiêu cá nhân:</strong> Hoạt động này có phù hợp với mục tiêu và định hướng học tập của mình không?</p></div>
+        <div><span>2</span><p><strong>Động cơ tham gia:</strong> Mình muốn tham gia vì thực sự cần thiết hay vì thấy nhiều bạn cùng tham gia?</p></div>
+        <div><span>3</span><p><strong>Ảnh hưởng từ bạn bè:</strong> Nếu không có bạn bè tham gia, mình có còn muốn lựa chọn hoạt động này không?</p></div>
+        <div><span>4</span><p><strong>Tính khả thi:</strong> Mình có đủ thời gian, khả năng và điều kiện để tham gia không?</p></div>
+      </div>
+      <div class="closing-note">
+        <h3>Không cần làm tất cả mọi thứ cùng lúc</h3>
+        <p>Một lựa chọn phù hợp là lựa chọn có lý do rõ ràng, phù hợp với mục tiêu và điều kiện của bạn ở thời điểm hiện tại.</p>
+        <a class="button" href="#tudanhgia">Tự đánh giá lại</a>
+      </div>
+    </section>
+
+    <section class="section" id="danhgia">
+      <div class="section-heading">
+        <p class="eyebrow">05 · PHẢN HỒI</p>
+        <h2>Ghi nhận trải nghiệm của bạn</h2>
+        <p>Phần phản hồi này giúp người xây dựng trang web biết nội dung nào hữu ích. Câu trả lời chỉ hiển thị trên trình duyệt này và chưa được gửi hoặc lưu vào cơ sở dữ liệu.</p>
+      </div>
+      <form id="feedbackForm" class="feedback-form">
+        <label for="useful">Nội dung nào hữu ích nhất với bạn?</label>
+        <select id="useful" required>
+          <option value="">-- Chọn một nội dung --</option>
+          <option>Phần tìm hiểu FOMO</option>
+          <option>Bài tự đánh giá</option>
+          <option>Thông tin về hoạt động học thuật</option>
+          <option>Bốn câu hỏi định hướng</option>
+        </select>
+        <label for="feedback">Bạn muốn đề xuất điều gì để trang web tốt hơn?</label>
+        <textarea id="feedback" rows="3" placeholder="Nhập ý kiến của bạn (không bắt buộc)"></textarea>
+        <button class="button" type="submit">Xem xác nhận</button>
+        <p id="feedbackResult" class="feedback-result" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
   <footer>
-    Sản phẩm nghiên cứu khoa học kỹ thuật dành cho học sinh THPT
+    <strong>Hiểu Mình – Chọn Đúng</strong>
+    <p>Trang web hỗ trợ học sinh suy ngẫm về lựa chọn học tập, không thay thế tư vấn chuyên môn.</p>
   </footer>
 
   <script src="script.js"></script>
